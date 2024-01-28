@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Avenir+Next:wght@400;500;600;700&family=Fira+Code:wght@400;700&family=Fira+Mono:wght@400;700&family=Manrope:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap");
+
+:root {
+	--font-base: "Avenir Next", "Manrope", sans-serif;
+	--font-mono: "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+	--h: 180;
+	--s: 2%;
+	--l: 20%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+html,
+body,
+#__next {
+	min-height: 100% !important;
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	font-family: var(--font-base);
+	background-image: url("/tokenBg.png");
+}
+
+pre,
+code {
+	font-family: var(--font-mono);
+}
+
+code {
+	padding: 0.25rem 0.5rem;
+	margin: 0 0.25rem;
+	border-radius: 0.4rem;
+	font-size: 0.875rem;
+}
+
+code:before,
+code:after {
+	content: "`";
+}
+
+ul,
+li {
+	list-style-position: inside;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+}
